@@ -1,0 +1,193 @@
+
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'roboto';
+    text-decoration: none !important;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 25vh; 
+}
+
+.header-icon {
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    border-radius: 100%;
+    border: 1px solid gray;
+    width: 26px;
+    height: 26px;
+}
+
+.footer{
+    background: black;
+    width: 100%; 
+}
+.text-footer{
+    align-items: left;
+    color: rgb(255, 255, 255);
+}
+
+.text{
+    display: grid;
+    background: black;
+    height: 25vh;
+    color: rgb(255, 255, 255);
+    grid-template-columns: 3fr 1fr;
+    margin-bottom: 10px;
+}
+
+.text-head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%;
+}
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation a{
+    color: rgb(0,0,0);
+}
+
+table {
+    width: 70%;
+    margin: 20px auto;
+    border-collapse: separate;
+
+
+
+    background-color: #ffffff;
+    border: 1px solid #ffffff; 
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+tr.first {
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: none;
+    color: #000000;
+}
+
+tr.second {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #000000; 
+}
+
+td.second-left {
+    width: 80px;
+    padding: 0;
+    text-align: center;
+}
+
+td.second-left img {
+    width: 60px;
+    height: 80px;
+    object-fit: cover;
+}
+
+td.second-middle {
+    flex: 1;
+    padding-left: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+    line-height: 1.6;
+}
+
+td.second-right {
+    min-width: 150px;
+    text-align: right;
+    font-size: 14px;
+    color: #333333;
+}
+
+tr.third {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #000000; 
+}
+
+td.third-left {
+    width: 80px;
+    padding: 0;
+    text-align: center;
+}
+
+td.third-left img {
+    width: 60px;
+    height: 80px;
+    object-fit: cover;
+}
+
+td.third-middle {
+    flex: 1;
+    padding-left: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+    line-height: 1.6;
+}
+
+td.third-right {
+    min-width: 150px;
+    text-align: right;
+    font-size: 14px;
+    color: #333333;
+}
+
+.detail p {
+    margin: 5px 0;
+}
+
+.delivery {
+    font-size: 12px;
+    color: #666666;
+    margin-bottom: 5px;
+}
+
+.status {
+    color: #000000; 
+    font-weight: bold;
+}
+
+.quantity {
+    font-size: 12px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.cost {
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 5px;
+}
