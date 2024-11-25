@@ -3,40 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesignup.css">
-    <title>Đăng ký | n.</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Đăng ký | vnd.</title>
 </head>
 <body>
     <div class="signup-box">
         <div class="signup-header">
             <header>Đăng ký</header>
         </div>
-        <div class="input-box">
-            <input type="text" class="input-field" placeholder="Tên đăng nhập" autocomplete="off" required>
-        </div>
-        <div class="input-box">
-            <input type="text" class="input-field" placeholder="Số điện thoại" autocomplete="off" required>
-        </div>
-        <div class="input-box">
-            <input type="text" class="input-field"  placeholder="Email" autocomplete="off" required>
-        </div>
-        <div class="input-box">
-            <input type="password" class="input-field" placeholder="Mật khẩu" autocomplete="off" required>
-        </div>
-        <div class="forgot">
-            <section>
-                <input type="checkbox" id="check">
-                <label for="check">Nhớ mật khẩu</label>
-            </section>
-        </div>
-        <div clas="input-submit">
-            <a href="login.html" class="submit-link">
-            <button class="submit-btn" id="submit">Đăng ký</button>
-        </a>
-        </div>
+        <!-- Form đăng ký -->
+        <form id="signupForm" onsubmit="return validateForm()">
+            <div class="input-box">
+                <input type="text" id="username" class="input-field" placeholder="Tên đăng nhập" autocomplete="off" required>
+            </div>
+            <div class="input-box">
+                <input type="text" id="phone" class="input-field" placeholder="Số điện thoại" autocomplete="off" required>
+            </div>
+            <div class="input-box">
+                <input type="email" id="email" class="input-field" placeholder="Email" autocomplete="off" required>
+            </div>
+            <div class="input-box">
+                <input type="password" id="password" class="input-field" placeholder="Mật khẩu" autocomplete="off" required>
+            </div>
+            <div class="forgot">
+                <section>
+                    <input type="checkbox" id="check">
+                    <label for="check">Nhớ mật khẩu</label>
+                </section>
+            </div>
+            <div class="input-submit">
+                <button type="submit" class="submit-btn">Đăng ký</button>
+            </div>
+        </form>
         <div class="login-link">
-            <p>Bạn đã có tài khoản. <a href="login.html">Đăng nhập</a></p>
+            <p>Bạn đã có tài khoản? <a href="login.html">Đăng nhập</a></p>
         </div>
     </div>
+
+    <script>
+        // Hàm kiểm tra thông tin đầu vào
+        function validateForm() {
+            const username = document.getElementById("username").value.trim();
+            const phone = document.getElementById("phone").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const password = document.getElementById("password").value.trim();
+
+            if (!username) {
+                alert("Vui lòng nhập tên đăng nhập.");
+                return false;
+            }
+
+            if (!phone) {
+                alert("Vui lòng nhập số điện thoại.");
+                return false;
+            }
+
+            if (!email) {
+                alert("Vui lòng nhập email.");
+                return false;
+            }
+
+            if (!password) {
+                alert("Vui lòng nhập mật khẩu.");
+                return false;
+            }
+
+            alert("Đăng ký thành công!");
+            return true;
+        }
+    </script>
 </body>
 </html>
