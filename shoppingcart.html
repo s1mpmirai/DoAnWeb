@@ -45,7 +45,7 @@
                     </div>
                 </div>
                 <div class="px-1 border-start">
-                    <div class="header-icon text-center">
+                    <div class="header-icon text-center" href="signup.html">
                         <i class="bi bi-person"></i>
                     </div>
                 </div>
@@ -74,66 +74,58 @@
         </nav>
     </div>
 
+    <h2 class="main-title">GIỎ HÀNG</h2>
     <div class="shopping-container">
-        <h2 class="main-title">GIỎ HÀNG</h2>
- 
-        <div class="shopping-row" data-id="1">
-            <div class="shopping-column">
-                <img src="images/slide7.jpg" alt="The Voice of the Snake" width="100">
+        <!-- Bảng sản phẩm -->
+        <div class="shopping-products">
+            <div class="shopping-row" data-id="1">
+                <div class="shopping-column">
+                    <img src="images/slide7.jpg" alt="The Voice of the Snake" width="100">
+                </div>
+                <div class="shopping-column">
+                    <p>The Voice of the Snake, 100ml, eau de parfum</p>
+                </div>
+                <div class="shopping-column">
+                    <input type="number" value="1" min="1" class="quantity">
+                </div>
+                <div class="shopping-column">9.541.800₫</div>
+                <div class="shopping-column">
+                    <button class="remove-btn">Xóa</button>
+                </div>
+                <div class="shopping-column">
+                    <i class="bi bi-star">Thêm vào yêu thích</i>
+                </div>
             </div>
-            <div class="shopping-column">
-                <p>The Voice of the Snake, 100ml, eau de parfum</p>
-            </div>
-            <div class="shopping-column">
-                <input type="number" value="1" min="1" class="quantity">
-            </div>
-            <div class="shopping-column">9.541.800₫</div>
-            <div class="shopping-column">
-                <button class="remove-btn">Xóa</button>
-                <br>
-                <a href="#">Thêm vào yêu thích</a>
+    
+            <div class="shopping-row" data-id="2">
+                <div class="shopping-column">
+                    <img src="images/slide23.jpg" alt="Chanel Cristalle" width="100">
+                </div>
+                <div class="shopping-column">
+                    <p>Chanel Cristalle, 100ml, eau de parfum</p>
+                </div>
+                <div class="shopping-column">
+                    <input type="number" value="1" min="1" class="quantity">
+                </div>
+                <div class="shopping-column">5.500.000₫</div>
+                <div class="shopping-column">
+                    <button class="remove-btn">Xóa</button>
+                </div>
+                <div class="shopping-column">
+                    <i class="bi bi-star">Thêm vào yêu thích</i>
+                </div>
             </div>
         </div>
     
-
-        <div class="shopping-row" data-id="2">
-            <div class="shopping-column">
-                <img src="images/slide23.jpg" alt="Chanel Cristalle" width="100">
-            </div>
-            <div class="shopping-column">
-                <p>Chanel Cristalle, 100ml, eau de parfum</p>
-            </div>
-            <div class="shopping-column">
-                <input type="number" value="1" min="1" class="quantity">
-            </div>
-            <div class="shopping-column">5.500.000₫</div>
-            <div class="shopping-column">
-                <button class="remove-btn">Xóa</button>
-                <br>
-                <a href="#">Thêm vào yêu thích</a>
-            </div>
+        <!-- Bảng thanh toán -->
+        <div class="shopping-summary">
+            <h2>Thông tin đơn hàng</h2>
+            <p>Tạm tính: <span id="subtotal">15.041.800₫</span></p>
+            <p>Phí giao hàng: <span id="shipping-fee">50.000₫</span></p>
+            <p><strong>Tổng: <span id="total">15.091.800₫</span></strong></p>
+            <button class="checkout-btn">Thanh toán ngay</button>
         </div>
     </div>    
-    <!-- Phần thông tin đơn hàng -->
-            <tfoot>
-                <tr>
-                    <td colspan="3" style="text-align: right;">Tạm tính:</td>
-                    <td colspan="2" id="subtotal">15.041.800₫</td>
-                </tr>
-                <tr>
-                    <td colspan="3" style="text-align: right;">Phí giao hàng:</td>
-                    <td colspan="2">50.000₫</td>
-                </tr>
-                <tr>
-                    <td colspan="3" style="text-align: right;"><strong>Tổng:</strong></td>
-                    <td colspan="2" id="total"><strong>15.091.800₫</strong></td>
-                </tr>
-                <tr>
-                    <td colspan="5" style="text-align: center;">
-                        <button class="checkout-btn">THANH TOÁN NGAY</button>
-                    </td>
-                </tr>
-            </tfoot> 
 
     <div class="row footer py-4">
 
@@ -253,7 +245,7 @@
             </div>
         </div>
     </div>
-
+    <script src="script.js"></script>
 </body>
 
 </html>

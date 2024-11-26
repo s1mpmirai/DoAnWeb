@@ -1,4 +1,3 @@
-
 *{
     margin: 0;
     padding: 0px;
@@ -36,9 +35,9 @@ body{
 }
 
 .footer{
+    display: flex;
     background: black;
     width: 100%;
-    /* height: 250px;  */
 }
 .text-footer{
     align-items: left;
@@ -78,30 +77,72 @@ body{
 
 .main-title {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 
 .shopping-container {
-    width: 100%;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
-    font-size: 16px;
-    background-color: #fff;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; /* Khoảng cách giữa hai cột */
+    margin: 100px;
 }
 
+/* Cột sản phẩm */
+.shopping-products {
+    flex: 2;
+    border-right: 1px solid #ccc;
+    padding-right: 20px;
+}
 .shopping-row {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.shopping-column {
+    flex: 1;
+    width: 100px;
+}
+
+/* Phần thanh toán */
+.shopping-summary {
+    flex: 1;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Giá */
+.price {
+    text-align: right;
+}
+
+/* Nút thanh toán */
+.checkout-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.checkout-btn:hover {
+    background-color: #444;
 }
 
 .shopping-column img {
     display: block;
     margin: 0 auto;
-    max-width: 100px;
+    max-width: 70px;
     height: auto;
 }
 
@@ -111,12 +152,12 @@ body{
 }
 
 .remove-btn {
-    background-color: black;
-    color: #fff;
-    padding: 5px 10px;
+    background: transparent;
+    color: grey;
+    font-size: 16px;
+    padding: 10px 50px;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
 }
 
 .shopping-column a {
